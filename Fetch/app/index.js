@@ -8,6 +8,7 @@ import {
   KeyboardAvoidingView
 } from 'react-native';
 import LoginForm from './LoginForm';
+import FacebookLoginButton from './FacebookLoginButton'
 
 
 export default class Fetch extends Component {
@@ -24,6 +25,12 @@ export default class Fetch extends Component {
             </Text>
           </View>
           <View>
+              <View style={styles.facebookLogoContainer}>
+                  <FacebookLoginButton onLoginFinished={() => alert("Login successful!")}/>
+                  <Text style={styles.textImage}>
+                      or
+                  </Text>
+              </View>
             <LoginForm />
           </View>
         </View>
@@ -31,7 +38,6 @@ export default class Fetch extends Component {
     );
   }
 }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -53,6 +59,11 @@ const styles = StyleSheet.create({
       width: 160,
       textAlign: 'center',
       opacity: 0.8
+    },
+    facebookLogoContainer: {
+        flexGrow: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     }
 });
 

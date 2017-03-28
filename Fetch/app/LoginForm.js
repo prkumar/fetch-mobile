@@ -2,6 +2,7 @@
  * Created by AnilJethani on 3/27/17.
  */
 import React, { Component } from 'react';
+
 import {
     AppRegistry,
     StyleSheet,
