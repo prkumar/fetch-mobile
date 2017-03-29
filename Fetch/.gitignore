@@ -51,3 +51,21 @@ buck-out/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
+
+
+# Facebook SDK
+ios/Frameworks/AccountKit.framework/
+ios/Frameworks/AccountKitStrings.bundle/
+ios/Frameworks/Bolts.framework/
+ios/Frameworks/DocSets/
+ios/Frameworks/FacebookSDKStrings.bundle/
+ios/Frameworks/FBAudienceNetwork.framework/
+ios/Frameworks/FBNotifications.framework/
+ios/Frameworks/fbsdk.zip
+ios/Frameworks/FBSDKCoreKit.framework/
+ios/Frameworks/FBSDKLoginKit.framework/
+ios/Frameworks/FBSDKMessengerShareKit.framework/
+ios/Frameworks/FBSDKShareKit.framework/
+ios/Frameworks/LICENSE.txt
+ios/Frameworks/README.txt
+ios/Frameworks/Samples/
