@@ -12,6 +12,7 @@ import FacebookLoginButton from './FacebookLoginButton'
 
 
 export default class Fetch extends Component {
+
   render() {
     return (
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
@@ -25,8 +26,8 @@ export default class Fetch extends Component {
             </Text>
           </View>
           <View>
-              <View style={styles.facebookLogoContainer}>
-                  <FacebookLoginButton onLoginFinished={() => alert("Login successful!")}/>
+              <View>
+                  <FacebookLoginButton readPermissions={["public_profile", "email"]} onLoginFinished={() => alert("Login successful!")}/>
                   <Text style={styles.textImage}>
                       or
                   </Text>
@@ -55,16 +56,11 @@ const styles = StyleSheet.create({
     },
     textImage: {
       color: '#FFF',
-      marginTop: 10,
-      width: 160,
+      // marginTop: 10,
+      // width: 160,
       textAlign: 'center',
       opacity: 0.8
     },
-    facebookLogoContainer: {
-        flexGrow: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
 });
 
 AppRegistry.registerComponent('Fetch', () => Fetch);

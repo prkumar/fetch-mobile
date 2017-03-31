@@ -55,11 +55,13 @@ const styles = StyleSheet.create({
       paddingHorizontal: 10
     },
     buttonContainer: {
+      borderRadius: 25,
       backgroundColor: '#2980b9',
       paddingVertical: 15,
     },
     buttonText: {
       color: '#FFF',
+      backgroundColor: 'rgba(0,0,0,0)',
       textAlign: 'center',
       fontWeight: '700'
     },
